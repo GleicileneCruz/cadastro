@@ -1,8 +1,8 @@
-package com.infotera.cadastro.service;
+package com.infotera.cadastro.services;
 
-import com.infotera.cadastro.model.Person;
-import com.infotera.cadastro.model.dtos.PersonDto;
-import com.infotera.cadastro.repository.PersonRepository;
+import com.infotera.cadastro.models.Contact;
+import com.infotera.cadastro.models.dtos.ContactDto;
+import com.infotera.cadastro.repositories.ContactRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
@@ -11,25 +11,25 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class PersonService {
+public class ContactService {
 
     @Autowired
-    PersonRepository repository;
-    public Person createPerson(PersonDto dto) {
-        Person newPerson = new Person(dto);
-        return repository.save(newPerson);
+    ContactRepository repository;
+    public Contact createContact(ContactDto dto) {
+        Contact newContact = new Contact(dto);
+        return repository.save(newContact);
     }
 
-    public List<Person> getAllPerson() {
+    public List<Contact> getAll() {
         Sort sort = Sort.by("name").ascending();
         return repository.findAll(sort);
     }
 
-    public Optional<Person> getUserById(Integer id){
+    public Optional<Contact> getUserById(Integer id){
         return repository.findById(id);
     }
 
-    public void updatePerson(Integer id, PersonDto dto) {
+    public void updateContact(Integer id, ContactDto dto) {
         var userExists = repository.findById(id);
         if(userExists.isPresent()){
             var user = userExists.get();

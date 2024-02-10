@@ -1,6 +1,6 @@
-package com.infotera.cadastro.model;
+package com.infotera.cadastro.models;
 
-import com.infotera.cadastro.model.dtos.PersonDto;
+import com.infotera.cadastro.models.dtos.PersonDto;
 
 import javax.persistence.*;
 @Entity
@@ -11,7 +11,6 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-
     private String email;
     private String telephone;
 

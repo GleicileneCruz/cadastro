@@ -1,4 +1,4 @@
-package com.infotera.cadastro.controller;
+package com.infotera.cadastro.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;

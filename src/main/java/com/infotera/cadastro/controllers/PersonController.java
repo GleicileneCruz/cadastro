@@ -1,8 +1,8 @@
-package com.infotera.cadastro.controller;
+package com.infotera.cadastro.controllers;
 
-import com.infotera.cadastro.model.Person;
-import com.infotera.cadastro.model.dtos.PersonDto;
-import com.infotera.cadastro.service.PersonService;
+import com.infotera.cadastro.models.Person;
+import com.infotera.cadastro.models.dtos.PersonDto;
+import com.infotera.cadastro.services.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

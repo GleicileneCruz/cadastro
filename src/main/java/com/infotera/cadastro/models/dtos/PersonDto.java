@@ -1,4 +1,4 @@
-package com.infotera.cadastro.model.dtos;
+package com.infotera.cadastro.models.dtos;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;

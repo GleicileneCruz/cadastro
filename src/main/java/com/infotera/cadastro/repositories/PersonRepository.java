@@ -1,6 +1,6 @@
-package com.infotera.cadastro.repository;
+package com.infotera.cadastro.repositories;
 
-import com.infotera.cadastro.model.Person;
+import com.infotera.cadastro.models.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
